@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Procê</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="topbar">
+        <nav class="menu-nav">
+            <a href="#" class="brand" aria-label="Café Procê">
+                <img src="./img/logo.png" alt="logo" class="logo" onerror="this.style.display='none'">
+                <span>Café Procê</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#">Pães</a></li>
+                <li><a href="#">Doces</a></li>
+                <li><a href="#">Salgados</a></li>
+                <li><a href="#">Bebidas</a></li>
+            </ul>
+
+            <a href="#" class="btn-menu">Peça agora</a>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="hero">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/bolo.jpg" class="d-block w-100" alt="Bolo">
+                        <div class="carousel-caption">
+                            <span class="eyebrow">Café artesanal</span>
+                            <h1>Sabor que acolhe o seu dia</h1>
+                            <p>Receitas feitas com carinho, ingredientes frescos e um toque de tradição.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/bolocho.jpg" class="d-block w-100" alt="Doces">
+                        <div class="carousel-caption">
+                            <span class="eyebrow">Doces irresistíveis</span>
+                            <h2>Uma experiência doce e sofisticada</h2>
+                            <p>Ideal para acompanhar o café da manhã ou um momento especial.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/pao.png" class="d-block w-100" alt="Pães">
+                        <div class="carousel-caption">
+                            <span class="eyebrow">Pães frescos</span>
+                            <h2>Frescura em cada mordida</h2>
+                            <p>Preparados diariamente para encantar o paladar com textura e aroma.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="features">
+            <article class="feature-card">
+                <span class="feature-icon">☕</span>
+                <h3>Café Premium</h3>
+                <p>Torra especial com sabor intenso e aroma marcante.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">🥐</span>
+                <h3>Produtos frescos</h3>
+                <p>Receitas diariamente preparadas com cuidado e qualidade.</p>
+            </article>
+
+            <article class="feature-card">
+                <span class="feature-icon">✨</span>
+                <h3>Ambiente acolhedor</h3>
+                <p>Um espaço pensado para relaxar, conversar e desfrutar.</p>
+            </article>
+        </section>
+
+        <section class="catalog">
+            <div class="section-header">
+                <span>Menu especial</span>
+                <h2>Escolhas que fazem a diferença</h2>
+            </div>
+
+            <div class="catalog-grid">
+                <div class="catalog-item">
+                    <div class="item-image item-one"></div>
+                    <div class="item-body">
+                        <h3>Pães artesanais</h3>
+                        <p>Macios, crocantes e irresistíveis.</p>
+                        <strong>R$ 18</strong>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="item-image item-two"></div>
+                    <div class="item-body">
+                        <h3>Doces da casa</h3>
+                        <p>Um toque sofisticado em cada sabor.</p>
+                        <strong>R$ 22</strong>
+                    </div>
+                </div>
+
+                <div class="catalog-item">
+                    <div class="item-image item-three"></div>
+                    <div class="item-body">
+                        <h3>Bebidas quentes</h3>
+                        <p>Deliciosas combinações para o seu momento.</p>
+                        <strong>R$ 16</strong>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
