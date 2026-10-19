@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pedidos | Café Procê</title>
+  <meta name="description" content="Faça seu pedido no Café Procê." />
+  <meta name="theme-color" content="#2b1a12" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+    crossorigin="anonymous"
+  />
+
+  <link rel="stylesheet" href="../css/pedidos.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <nav class="menu-nav" aria-label="Principal">
+      <a href="index.html" class="brand">
+        <img src="../img/logo.png" alt="Logo Café Procê" class="logo" width="40" height="40" />
+        <span>Café Procê</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menuLinks"
+        aria-controls="menuLinks"
+        aria-expanded="false"
+        aria-label="Abrir menu"
+      >
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <div class="collapse nav-collapse" id="menuLinks">
+        <ul class="nav-links">
+          <li><a href="sobre.html">Sobre nós</a></li>
+          <li><a href="index.html#produtos">Produtos</a></li>
+          <li><a href="pedidos.html" aria-current="page">Pedidos</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-shell pedidos-page">
+    <section class="pedidos-hero">
+      <div>
+        <p class="eyebrow">Seu café favorito</p>
+        <h1>Faça seu pedido</h1>
+        <p>Escolha o que você quer, personalize e finalize em poucos passos.</p>
+      </div>
+      <a href="#cardapio" class="btn-menu">Ver cardápio</a>
+    </section>
+
+    <section class="pedidos-layout" id="cardapio">
+      <div class="lista-produtos">
+        <!-- CAFÉS -->
+        <div class="categoria">
+          <h2>☕ Cafés</h2>
+
+          <article class="produto-card" data-produto-id="1">
+            <div class="produto-info">
+              <h3>Espresso</h3>
+              <p>Intenso, encorpado e perfeito para quem gosta de sabor marcante.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 9,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(1, 'Espresso', 9.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+
+          <article class="produto-card" data-produto-id="2">
+            <div class="produto-info">
+              <h3>Cappuccino</h3>
+              <p>Café com leite cremoso e uma camada de espuma suave.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 14,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(2, 'Cappuccino', 14.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+
+          <article class="produto-card" data-produto-id="3">
+            <div class="produto-info">
+              <h3>Latte</h3>
+              <p>Mais suave, com leite vaporizado e aroma do café especial.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 15,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(3, 'Latte', 15.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- PÃES -->
+        <div class="categoria">
+          <h2>🥐 Pães</h2>
+
+          <article class="produto-card" data-produto-id="4">
+            <div class="produto-info">
+              <h3>Pão de queijo</h3>
+              <p>Quentinho, crocante por fora e macio por dentro.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 8,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(4, 'Pão de queijo', 8.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+
+          <article class="produto-card" data-produto-id="5">
+            <div class="produto-info">
+              <h3>Pão na chapa</h3>
+              <p>Clássico, saboroso e perfeito com manteiga ou requeijão.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 10,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(5, 'Pão na chapa', 10.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- DOCES -->
+        <div class="categoria">
+          <h2>🍰 Doces</h2>
+
+          <article class="produto-card" data-produto-id="6">
+            <div class="produto-info">
+              <h3>Brownie</h3>
+              <p>Úmido, intenso e com um toque de chocolate.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 12,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(6, 'Brownie', 12.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+
+          <article class="produto-card" data-produto-id="7">
+            <div class="produto-info">
+              <h3>Croissant</h3>
+              <p>Folhado, dourado e irresistível para qualquer hora do dia.</p>
+            </div>
+            <div class="produto-acoes">
+              <span class="preco">R$ 11,00</span>
+              <button type="button" class="btn-add" data-bs-toggle="modal" data-bs-target="#modalProduto" onclick="abrirProduto(7, 'Croissant', 11.00)">
+                Adicionar
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- RESUMO DO PEDIDO -->
+      <aside class="resumo-pedido">
+        <h2>Seu pedido</h2>
+        <div id="carrinho-container">
+          <div class="carrinho-vazio">
+            <p>Nenhum produto adicionado</p>
+          </div>
+        </div>
+
+        <div class="totais">
+          <div class="subtotal">
+            <span>Subtotal</span>
+            <strong id="subtotal-valor">R$ 0,00</strong>
+          </div>
+          <div class="subtotal">
+            <span>Entrega</span>
+            <strong id="entrega-valor">R$ 6,00</strong>
+          </div>
+        </div>
+
+        <div class="total-final">
+          <span>Total</span>
+          <strong id="total-valor">R$ 0,00</strong>
+        </div>
+
+        <form class="pedido-form" id="form-pedido" onsubmit="finalizarPedido(event)">
+          <label>
+            Nome *
+            <input type="text" id="nome" placeholder="Seu nome" required />
+          </label>
+
+          <label>
+            Telefone *
+            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required />
+          </label>
+
+          <label>
+            Endereço *
+            <input type="text" id="endereco" placeholder="Rua, número e bairro" required />
+          </label>
+
+          <label>
+            Observações
+            <textarea id="observacoes" rows="3" placeholder="Ex: sem açúcar, sem gelo, ponto do café..."></textarea>
+          </label>
+
+          <button type="submit" class="btn-finalizar">Finalizar pedido</button>
+        </form>
+      </aside>
+    </section>
+  </main>
+
+  <!-- MODAL DE CUSTOMIZAÇÃO -->
+  <div class="modal fade" id="modalProduto" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitulo">Produto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="modal-info">
+            <p id="modalPreco" class="preco-modal">R$ 0,00</p>
+          </div>
+
+          <!-- QUANTIDADE -->
+          <div class="opcao-grupo">
+            <label>Quantidade</label>
+            <div class="quantidade-selector">
+              <button type="button" onclick="diminuirQuantidade()">−</button>
+              <input type="number" id="quantidade" value="1" min="1" readonly />
+              <button type="button" onclick="aumentarQuantidade()">+</button>
+            </div>
+          </div>
+
+          <!-- TAMANHO (para cafés) -->
+          <div id="opcao-tamanho" class="opcao-grupo" style="display: none;">
+            <label>Tamanho</label>
+            <div class="opcoes-radio">
+              <label class="opcao-radio">
+                <input type="radio" name="tamanho" value="P" onchange="atualizarPreco()"> Pequeno (250ml)
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="tamanho" value="M" checked onchange="atualizarPreco()"> Médio (350ml) +R$ 1,00
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="tamanho" value="G" onchange="atualizarPreco()"> Grande (500ml) +R$ 2,00
+              </label>
+            </div>
+          </div>
+
+          <!-- TIPO DE LEITE (para cafés com leite) -->
+          <div id="opcao-leite" class="opcao-grupo" style="display: none;">
+            <label>Tipo de leite</label>
+            <div class="opcoes-radio">
+              <label class="opcao-radio">
+                <input type="radio" name="leite" value="integral" checked onchange="atualizarPreco()"> Integral
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="leite" value="desnatado" onchange="atualizarPreco()"> Desnatado
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="leite" value="amêndoa" onchange="atualizarPreco()"> Amêndoa +R$ 2,00
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="leite" value="aveia" onchange="atualizarPreco()"> Aveia +R$ 2,00
+              </label>
+            </div>
+          </div>
+
+          <!-- TEMPERATURA -->
+          <div class="opcao-grupo">
+            <label>Temperatura</label>
+            <div class="opcoes-radio">
+              <label class="opcao-radio">
+                <input type="radio" name="temperatura" value="quente" checked onchange="atualizarPreco()"> Quente
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="temperatura" value="morno" onchange="atualizarPreco()"> Morno
+              </label>
+              <label class="opcao-radio">
+                <input type="radio" name="temperatura" value="gelado" onchange="atualizarPreco()"> Gelado
+              </label>
+            </div>
+          </div>
+
+          
+          <div class="opcao-grupo">
+            <label>Adicionais</label>
+            <div class="opcoes-checkbox">
+              <label class="opcao-checkbox">
+                <input type="checkbox" name="adicionais" value="calda" onchange="atualizarPreco()"> Calda de chocolate +R$ 1,00
+              </label>
+              <label class="opcao-checkbox">
+                <input type="checkbox" name="adicionais" value="nata" onchange="atualizarPreco()"> Nata +R$ 0,50
+              </label>
+              <label class="opcao-checkbox">
+                <input type="checkbox" name="adicionais" value="canela" onchange="atualizarPreco()"> Canela +R$ 0,50
+              </label>
+              <label class="opcao-checkbox">
+                <input type="checkbox" name="adicionais" value="mel" onchange="atualizarPreco()"> Mel +R$ 1,00
+              </label>
+            </div>
+          </div>
+
+        
+          <div class="opcao-grupo">
+            <label>Observações</label>
+            <textarea id="obs-produto" rows="2" placeholder="Algo especial?"></textarea>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <div class="modal-preco-total">
+            <span>Total:</span>
+            <strong id="modal-total-preco">R$ 0,00</strong>
+          </div>
+          <button type="button" class="btn-cancelar" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn-confirmar" onclick="adicionarAoCarrinho()">Adicionar ao pedido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="ano">2026</span> Café Procê. Todos os direitos reservados.</p>
+  </footer>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"
+  ></script>
+
+  <script src="../js/pedidos.js"></script>
+</body>
+</html>

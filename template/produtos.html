@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Procê | Pães, doces e café artesanal</title>
+    <meta name="description"
+        content="Café Procê: pães frescos, doces da casa, salgados e bebidas quentes preparados todos os dias.">
+    <meta name="theme-color" content="#2b1a12">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+ 
+    <!-- Bootstrap primeiro, para o seu CSS poder sobrescrevê-lo -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+ 
+    <link rel="stylesheet" href="../css/produtos.css">
+</head>
+ 
+<body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+ 
+    <header class="topbar">
+        <nav class="menu-nav" aria-label="Principal">
+            <a href="#inicio" class="brand">
+                <img src="../img/logo.png" alt="" class="logo" width="40" height="40">
+                <span>Café Procê</span>
+            </a>
+ 
+            <button class="nav-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#menuLinks"
+                aria-controls="menuLinks" aria-expanded="false" aria-label="Abrir menu">
+                <span class="nav-toggle-bar"></span>
+            </button>
+ 
+            <div class="collapse nav-collapse" id="menuLinks">
+                <ul class="nav-links">
+                    <li><a href="#paes">Pães</a></li>
+                    <li><a href="#doces">Doces</a></li>
+                    <li><a href="#salgados">Salgados</a></li>
+                    <li><a href="#bebidas">Bebidas</a></li>
+                </ul>
+                <a href="#cardapio" class="btn-menu">Peça agora</a>
+            </div>
+        </nav>
+    </header>
+ 
+    <main id="conteudo" class="page-shell">
+        <h1 class="visually-hidden">Café Procê: café artesanal, pães e doces frescos</h1>
+ 
+        <section id="inicio" class="hero" aria-label="Destaques">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1: café artesanal"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2: doces"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3: pães frescos"></button>
+                </div>
+ 
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../img/bolo.jpg" class="d-block w-100" alt="Bolo caseiro sobre a mesa do café"
+                            width="1600" height="700" fetchpriority="high">
+                        <div class="carousel-caption">
+                            <p class="eyebrow">Café artesanal</p>
+                            <h2>Sabor que acolhe o seu dia</h2>
+                            <p>Receitas feitas com carinho, ingredientes frescos e um toque de tradição.</p>
+                        </div>
+                    </div>
+ 
+                    <div class="carousel-item">
+                        <img src="../img/bolocho.jpg" class="d-block w-100" alt="Bolachas e doces da casa"
+                            width="1600" height="700" loading="lazy">
+                        <div class="carousel-caption">
+                            <p class="eyebrow">Doces irresistíveis</p>
+                            <h2>Uma experiência doce e sofisticada</h2>
+                            <p>Ideal para acompanhar o café da manhã ou um momento especial.</p>
+                        </div>
+                    </div>
+ 
+                    <div class="carousel-item">
+                        <img src="../img/pao.png" class="d-block w-100" alt="Pães artesanais recém-assados"
+                            width="1600" height="700" loading="lazy">
+                        <div class="carousel-caption">
+                            <p class="eyebrow">Pães frescos</p>
+                            <h2>Frescura em cada mordida</h2>
+                            <p>Preparados diariamente para encantar o paladar com textura e aroma.</p>
+                        </div>
+                    </div>
+                </div>
+ 
+                <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Slide anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo slide</span>
+                </button>
+            </div>
+        </section>
+ 
+        <section class="features" aria-labelledby="titulo-diferenciais">
+            <h2 id="titulo-diferenciais" class="visually-hidden">Nossos diferenciais</h2>
+ 
+            <article class="feature-card">
+                <span class="feature-icon" aria-hidden="true">☕</span>
+                <h3>Café premium</h3>
+                <p>Torra especial com sabor intenso e aroma marcante.</p>
+            </article>
+ 
+            <article class="feature-card">
+                <span class="feature-icon" aria-hidden="true">🥐</span>
+                <h3>Produtos frescos</h3>
+                <p>Receitas preparadas todos os dias, com cuidado e qualidade.</p>
+            </article>
+ 
+            <article class="feature-card">
+                <span class="feature-icon" aria-hidden="true">✨</span>
+                <h3>Ambiente acolhedor</h3>
+                <p>Um espaço pensado para relaxar, conversar e aproveitar.</p>
+            </article>
+        </section>
+ 
+        <section id="cardapio" class="catalog" aria-labelledby="titulo-cardapio">
+            <div class="section-header">
+                <p class="eyebrow">Menu especial</p>
+                <h2 id="titulo-cardapio">Escolhas que fazem a diferença</h2>
+            </div>
+ 
+            <ul class="catalog-grid">
+                <!-- Pães -->
+                <li id="paes" class="catalog-item">
+                    <div id="paesCarousel" class="carousel slide item-carousel" data-bs-ride="carousel"
+                        aria-label="Fotos de pães artesanais">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#paesCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Foto 1"></button>
+                            <button type="button" data-bs-target="#paesCarousel" data-bs-slide-to="1"
+                                aria-label="Foto 2"></button>
+                            <button type="button" data-bs-target="#paesCarousel" data-bs-slide-to="2"
+                                aria-label="Foto 3"></button>
+                            <button type="button" data-bs-target="#paesCarousel" data-bs-slide-to="3"
+                                aria-label="Foto 4"></button>
+                            <button type="button" data-bs-target="#paesCarousel" data-bs-slide-to="4"
+                                aria-label="Foto 5"></button>
+                            <button type="button" data-bs-target="#paesCarousel" data-bs-slide-to="5"
+                                aria-label="Foto 6"></button>
+                        </div>
+ 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="../img/p.jpg" alt="Xícara de café quente" width="800" height="600"
+                                    loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/pao2.png" alt="Caneca de chocolate quente" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/paocaseiro.jpg" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/paodequeijo.png" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/paorecheado.jpg" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/paoo.jpg" alt="Café especial da casa" width="800" height="600"
+                                    loading="lazy">
+                            </div>
+                        </div>
+ 
+                        <button class="carousel-control-prev" type="button" data-bs-target="#paesCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Foto anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#paesCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próxima foto</span>
+                        </button>
+                    </div>
+                    <div class="item-body">
+                        <h3>Pães artesanais</h3>
+                        <p>Macios, crocantes e irresistíveis.</p>
+                        <strong class="price">R$&nbsp;18</strong>
+                    </div>
+                </li>
+ 
+                <!-- Doces -->
+                <li id="doces" class="catalog-item">
+                    <div id="docesCarousel" class="carousel slide item-carousel" data-bs-ride="carousel"
+                        aria-label="Fotos de doces gourmet">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#docesCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Foto 1: café"></button>
+                            <button type="button" data-bs-target="#docesCarousel" data-bs-slide-to="1"
+                                aria-label="Foto 2: chocolate quente"></button>
+                            <button type="button" data-bs-target="#docesCarousel" data-bs-slide-to="2"
+                                aria-label="Foto 3: café especial"></button>
+                            <button type="button" data-bs-target="#docesCarousel" data-bs-slide-to="3"
+                                aria-label="Foto 4: café especial"></button>
+                            <button type="button" data-bs-target="#docesCarousel" data-bs-slide-to="4"
+                                aria-label="Foto 5: café especial"></button>
+                        </div>
+ 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="../img/bolor.jpg" alt="Xícara de café quente" width="800" height="600"
+                                    loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/croissant.jpg" alt="Caneca de chocolate quente" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/sonho.jpg" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/donuts.jpg" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/croissant.jpg" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                        </div>
+ 
+                        <button class="carousel-control-prev" type="button" data-bs-target="#docesCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Foto anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#docesCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próxima foto</span>
+                        </button>
+                    </div>
+                    <div class="item-body">
+                        <h3>Doces da casa</h3>
+                        <p>Um toque sofisticado em cada sabor.</p>
+                        <strong class="price">R$&nbsp;22</strong>
+                    </div>
+                </li>
+ 
+                <!-- Bebidas -->
+                <li id="bebidas" class="catalog-item">
+                    <div id="bebidasCarousel" class="carousel slide item-carousel" data-bs-ride="carousel"
+                        aria-label="Fotos de bebidas quentes">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#bebidasCarousel" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Foto 1: café"></button>
+                            <button type="button" data-bs-target="#bebidasCarousel" data-bs-slide-to="1"
+                                aria-label="Foto 2: chocolate quente"></button>
+                            <button type="button" data-bs-target="#bebidasCarousel" data-bs-slide-to="2"
+                                aria-label="Foto 3: café especial"></button>
+                        </div>
+ 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="4000">
+                                <img src="../img/cafe.jpg" alt="Xícara de café quente" width="800" height="600"
+                                    loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/chocoquente.jpg" alt="Caneca de chocolate quente" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="4000">
+                                <img src="../img/cafep.jpg" alt="Café especial da casa" width="800"
+                                    height="600" loading="lazy">
+                            </div>
+                        </div>
+ 
+                        <button class="carousel-control-prev" type="button" data-bs-target="#bebidasCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Foto anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#bebidasCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Próxima foto</span>
+                        </button>
+                    </div>
+                    <div class="item-body">
+                        <h3>Bebidas quentes</h3>
+                        <p>Combinações deliciosas para o seu momento.</p>
+                        <strong class="price">R$&nbsp;16</strong>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+ 
+    <footer class="site-footer">
+        <p>&copy; <span id="ano">2026</span> Café Procê. Todos os direitos reservados.</p>
+    </footer>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+ 
+    <script>
+        document.getElementById('ano').textContent = new Date().getFullYear();
+    </script>
+</body>
+ 
+</html>
+ 
